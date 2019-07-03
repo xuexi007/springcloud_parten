@@ -1,0 +1,14 @@
+#服务器启动端口号
+server:
+  port: 10086
+#应用的名称
+spring:
+  application:
+    name: EurekaServer
+#EurekaServer配置
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka  #把注册地址指向注册中心2
+

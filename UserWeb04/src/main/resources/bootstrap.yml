@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: UserWeb04
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVER
+      profile: dev
+      label: master

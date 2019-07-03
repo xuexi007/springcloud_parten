@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xuexi007/java0114-configserver
+          username: xuexi007
+          password: Offcn123
+          search-paths: offcn/config-repo
+          force-pull: true   #强制更新
+server:
+  port: 7001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka,http://localhost:10087/eureka
