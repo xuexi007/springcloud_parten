@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: UserProvider01
   cloud:
     config:
       discovery:
